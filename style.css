@@ -1,0 +1,90 @@
+* {
+  
+}
+body {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://insights.taylorandfrancis.com/wp-content/uploads/2023/02/shorthand/70/ziL9x3OMXJ/assets/TrbOHTusAU/kyiv-from-above-motherland-statue-4096x2729.jpeg);
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading-block1 {
+  border-left: 10px solid blue;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 75%;
+  width: 200px;
+  height: 200px;
+  transform: rotateX(35deg) rotateY(-45deg);
+  animation:  loading1 2s linear infinite   ;
+  position: absolute;
+}
+.loading-block2 {
+  border-left: 10px solid yellow;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 75%;
+  width: 200px;
+  height: 200px;
+  transform: rotateX(70deg) rotateY(-10deg);
+  animation: loading2 2s linear infinite ;
+  position: absolute;
+}
+.loading-block3 {
+  border-left: 10px solid blue;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 75%;
+  width: 200px;
+  height: 200px;
+  transform: rotateX(105deg) rotateY(25deg);
+  animation: loading3 2s linear infinite ;
+  position: absolute;
+}
+.loading-block4 {
+  border-left: 10px solid yellow ;
+  position: absolute;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 75%;
+  width: 200px;
+  height: 200px;
+  transform: rotateX(140deg) rotateY(60deg);
+  animation: loading4 2s linear infinite ;
+}
+.trezub {
+  margin-left: 60px;
+  margin-top: 60px;
+  animation: trezub 1s infinite alternate-reverse linear;
+  opacity: 0.5;
+  position: absolute;
+}
+@keyframes trezub {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@keyframes loading1{
+  to {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes loading2{
+  to {
+      transform: rotateX(70deg) rotateY(-10deg) rotateZ(360deg);
+  }
+}
+@keyframes loading3{
+  to {
+      transform: rotateX(105deg) rotateY(25deg) rotateZ(360deg);
+  }
+}
+@keyframes loading4{
+  to {
+      transform: rotateX(140deg) rotateY(60deg) rotateZ(360deg);
+  }
+}
